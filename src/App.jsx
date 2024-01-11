@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import Sidebar from './components/Sidebar'
+import Sidebar from './components/sidebar/Sidebar'
+import ChannelBar from './components/channelBar/ChannelBar'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,6 +9,7 @@ function App() {
   return (
     <div className='flex'> 
       <Sidebar/>
+      <ChannelBar/>
     </div>
   )
 }
